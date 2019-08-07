@@ -1,0 +1,31 @@
+@import '~@bodhi-project/typography/lib/mixins/headingMixins.less';
+@import '~@bodhi-project/typography/lib/mixins/paragraphMixins.less';
+
+@fontFamily: "futura-pt", "Avenir Next", "Helvetica", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+.headingType(@fontFamily);
+
+each(@responsiveSteps, {
+  .responsiveHeading(@value, @index)
+});
+
+.paragraphType(@fontFamily);
+
+each(@responsiveSteps, {
+  .responsiveParagraph(@value, @index)
+});
+
+#copy {
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.3;
+  }
+}

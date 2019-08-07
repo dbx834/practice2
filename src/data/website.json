@@ -1,0 +1,66 @@
+{
+  "websiteName": "NIMAS Master",
+  "websiteCreator": "Bodhi Project",
+  "websiteUrl": "https://www.nimas.pub/",
+  "nakedWebsiteUrl": "https://www.nimas.pub",
+  "devUrl": "http://localhost:8000/",
+  "nakedDevUrl": "http://localhost:8000",
+  "websiteKeywords": "NIMAS, NIMAS files, NIMAS fileset, NIMAS info, creating NIMAS files, NIMAS conversion services, NIMAS xml, NIMAS and MathML, MathML in NIMAS, MathML in DAISY, DAISY DTB, NIMAC, NIMAS/NIMAC, NIMAS-NIMAC, AEM, AIM, CAST, Accessible Educational Materials, Accessible Instructional Materials",
+  "websiteAbstract": "Comprehensive and end-to-end NIMAS Conversion Service",
+  "websiteDescription": "We offer extensive accessibility services to publishers and educators that enable accessible and equitable education. Key services — NIMAS Conversion Service and WCAG Compliace Service.",
+  "rssUrl": "/rss.xml",
+  "org": {
+    "name": "Bodhi Project",
+    "legalName": "Bodhi Project Inc.",
+    "url": "https://www.bodhiproject.org",
+    "logo": "/logo.png",
+    "foundingDate": "2017-01-01",
+    "founders": ["Pranav Kumar", "Brijesh Kumar", "Mangal Varshney"]
+  },
+  "orgLocation": {
+    "streetAddress": "Street #123",
+    "addressLocality": "Kotagiri",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "643217",
+    "addressCountry": "India",
+    "locationName": "Kotagiri",
+    "locationUrl": "https://en.wikipedia.org/wiki/Kotagiri"
+  },
+  "orgContact": {
+    "email": "hello@bodhiproject.org",
+    "telephone": ["na"]
+  },
+  "orgSocialMediaProfiles": [
+    "http://instagram.com/bodhisystems",
+    "https://twitter.com/_dmi_systems"
+  ],
+  "pathPrefix": "/",
+  "copyright": "Copyright © 2018 Bodhi Project",
+  "googleAnalyticsID": "UA-109854711-2",
+  "googleAnalyticsViewID": "182889144",
+  "app": {
+    "projectContext": "QKBp9oMLbyHKY63uf"
+  },
+  "design": {
+    "paletteUrl": "https://www.color-hex.com/color-palette/1865"
+  },
+  "googleSiteVerification": "na",
+  "db": {
+    "dbName": "db01",
+    "collection": ["blog"],
+    "server": {
+      "address": "cluster0-shard-00-00-wjndh.mongodb.net",
+      "port": 27017
+    },
+    "auth": {
+      "user": "reader-bot",
+      "password": "TuDtYPomUNhVUysE"
+    },
+    "extraParams": {
+      "ssl": true,
+      "replicaSet": "Cluster0-shard-0",
+      "authSource": "admin",
+      "retryWrites": true
+    }
+  }
+}

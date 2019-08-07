@@ -1,0 +1,15 @@
+{
+  "nav": [
+    { "title": "Home", "link": "/", "mobileOnly": true },
+    {
+      "title": "Login",
+      "link": "http://nimas.dmiepub.com/?module=signin",
+      "mobileOnly": true
+    },
+    {
+      "title": "Contact",
+      "link": "http://nimas.dmiepub.com/?module=contact",
+      "mobileOnly": true
+    }
+  ]
+}

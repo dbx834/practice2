@@ -1,0 +1,189 @@
+.opener {
+  & .box {
+    height: 90vh;
+    min-height: 550px;
+    background-color: #f7f7fa;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+
+    @media (max-width: 992px) {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 5vh !important;
+      margin-bottom: 5vh !important;
+    }
+
+    @media (max-width: 1280px) {
+      box-shadow: unset !important;
+    }
+
+    & .small-container {
+      position: relative;
+
+      & .text {
+        position: relative;
+        z-index: 100;
+        padding: 5vh;
+
+        h2 {
+          line-height: 1.2 !important;
+          margin-bottom: 50px !important;
+
+          > small {
+            display: block;
+            font-size: 105%;
+          }
+
+          > span {
+            display: inline-block;
+            position: relative;
+
+            > span {
+              &:nth-child(1) {
+                color: #583e85;
+                z-index: 2;
+                position: relative;
+                font-size: 125%;
+              }
+
+              &:nth-child(2) {
+                position: absolute;
+                top: 62%;
+                left: 0;
+                width: 100%;
+                height: 12px;
+                border-radius: 10px;
+                z-index: 1;
+                background-color: #abf3ff;
+              }
+            }
+          }
+        }
+
+        p {
+          @media (max-width: 992px) {
+            span {
+              font-size: 150%;
+            }
+          }
+        }
+      }
+
+      & .symbols {
+        width: inherit;
+        height: 220px;
+        padding: 5vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0.3;
+
+        @media (max-width: 992px) {
+          opacity: 0.15;
+        }
+
+        & .symbol1,
+        .symbol2,
+        .symbol3,
+        .symbol4,
+        .symbol5,
+        .symbol6 {
+          position: absolute !important;
+          transition: all 0.25s ease;
+
+          & > div {
+            height: inherit !important;
+            width: inherit !important;
+          }
+        }
+
+        & .symbol1 {
+          height: 90px;
+          width: 90px;
+          top: 50px;
+          left: -170px;
+
+          @media (max-width: 992px) {
+            top: -70px;
+            left: 200px;
+          }
+
+          @media (max-width: 576px) {
+            opacity: 0;
+          }
+        }
+
+        & .symbol2 {
+          height: 72px;
+          width: 40px;
+          top: 150px;
+          right: -170px;
+
+          @media (max-width: 992px) {
+            top: -150px;
+            right: 80px;
+          }
+        }
+
+        & .symbol3 {
+          height: 44px;
+          width: 40px;
+          top: -90px;
+          left: 20px;
+
+          @media (max-width: 992px) {
+            top: -90px;
+            left: 80px;
+          }
+        }
+
+        & .symbol4 {
+          height: 39.3px;
+          width: 32px;
+          bottom: -120px;
+          right: -10px;
+
+          @media (max-width: 992px) {
+            bottom: -120px;
+            right: 30px;
+          }
+        }
+
+        & .symbol5 {
+          height: 78px;
+          width: 89px;
+          top: -100px;
+          right: -120px;
+
+          @media (max-width: 992px) {
+            top: 350px;
+            right: 120px;
+          }
+        }
+
+        & .symbol6 {
+          height: 89.2px;
+          width: 60.5px;
+          top: 270px;
+          left: -90px;
+
+          @media (max-width: 992px) {
+            top: 270px;
+            left: 90px;
+          }
+
+          @media (max-width: 576px) {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

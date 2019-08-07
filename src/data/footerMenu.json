@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Service",
+    "menu": [
+      { "title": "NIMAS Conversion", "link": "/nimas-conversion-service" },
+      { "title": "Pricing", "link": "/pricing" }
+    ]
+  },
+  {
+    "title": "Other Services",
+    "menu": [
+      { "title": "WCAG Compliance", "link": "/about-restorative-auroville" },
+      {
+        "title": "Digital Instructional Materials",
+        "link": "/about-restorative-auroville"
+      },
+      {
+        "title": "Braille",
+        "link": "/about-restorative-auroville"
+      },
+      { "title": "Digital Talking Books", "link": "/restorative-circles" },
+      { "title": "Document Remediation", "link": "/restorative-circles" }
+    ]
+  },
+  {
+    "title": "Resources",
+    "menu": [
+      { "title": "Getting Started", "link": "/getting-started" },
+      {
+        "title": "Contact Us",
+        "link": "http://nimas.dmiepub.com/?module=contact"
+      },
+      { "title": "Careers", "link": "/careers" },
+      { "title": "FAQs", "link": "/frequently-asked-questions" },
+      { "title": "About Us", "link": "/company" }
+    ]
+  }
+]

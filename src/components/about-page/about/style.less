@@ -1,0 +1,31 @@
+.about {
+  padding: 1rem 5%;
+  padding-top: 12.34vh;
+  min-height: 100vh;
+
+  & .text {
+    max-width: 60rem;
+  }
+
+  & .gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .image {
+      display: flex;
+      flex: 1 0 11%; /* explanation below */
+      margin: 5px;
+
+      > div {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: all 200ms ease;
+
+        &:hover {
+          box-shadow: 0 4px 10px #d8e0e6;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.services {
+  & .small-default-container {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      padding: 4rem 5%;
+    }
+
+    @media (min-width: 992px) {
+      min-height: calc(100vh + 4rem);
+    }
+  }
+
+  & .fore-back {
+    position: relative;
+
+    @media (max-width: 769px) {
+      display: none;
+    }
+
+    & .fore > div,
+    .back > div {
+      height: inherit;
+      width: inherit;
+    }
+
+    & .fore {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      height: 400px;
+      width: 400px;
+      opacity: 1;
+      transition: all 1.2s ease !important;
+
+      @media (max-width: 992px) {
+        height: 260px;
+        width: 260px;
+      }
+    }
+
+    & .back {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      height: 400px;
+      width: 400px;
+      opacity: 0;
+      transition: all 1.2s ease !important;
+
+      @media (max-width: 992px) {
+        height: 260px;
+        width: 260px;
+      }
+    }
+
+    & .just-cover {
+      height: 400px;
+      width: 400px;
+
+      @media (max-width: 992px) {
+        height: 260px;
+        width: 260px;
+      }
+    }
+  }
+
+  & .educators-container,
+  .publishers-container {
+    &:hover {
+      & .fore {
+        opacity: 0;
+      }
+      & .back {
+        opacity: 1;
+      }
+    }
+  }
+
+  & .educators-container {
+    transition: all 1.2s ease;
+
+    &:hover {
+      background: rgba(234, 237, 255, 1);
+    }
+  }
+
+  & .publishers-container {
+    transition: all 1.2s ease;
+
+    &:hover {
+      background: rgba(252, 234, 255, 1);
+    }
+  }
+
+  & .schools-container {
+    transition: all 1.2s ease;
+
+    &:hover {
+      background: rgba(251, 238, 233, 1);
+    }
+  }
+
+  & .publishers {
+    width: 100%;
+
+    & h2 {
+      color: #a902c1;
+    }
+  }
+
+  & .educators {
+    width: 100%;
+
+    & h2 {
+      color: #021dc1;
+    }
+  }
+
+  & .schools {
+    width: 100%;
+
+    & h2 {
+      color: #c1021d;
+    }
+  }
+
+  & h2 {
+    line-height: 1.1 !important;
+    text-transform: uppercase !important;
+    font-weight: 200 !important;
+    letter-spacing: 0.1rem !important;
+    margin-bottom: 20px !important;
+
+    & span {
+      font-size: 60%;
+    }
+  }
+
+  & h3 {
+    line-height: 1 !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-bottom: 1.6rem !important;
+
+    & span {
+      font-size: 140%;
+    }
+  }
+
+  & p {
+    max-width: 380px !important;
+    color: #7a7a7a;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+    & i {
+      display: block;
+      color: #3d3d3d;
+      font-size: 110%;
+      margin-bottom: 1.1rem !important;
+    }
+  }
+}

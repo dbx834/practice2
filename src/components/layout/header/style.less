@@ -1,0 +1,258 @@
+header {
+  &.desktop-header {
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo {
+      height: 60px;
+      width: 60px;
+
+      & > div {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    & #nav {
+      padding: 0px !important;
+      list-style: none;
+      display: flex;
+      margin-bottom: 0px !important;
+
+      & li {
+        margin-bottom: 0px !important;
+
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+
+        & > a {
+          font-weight: 800 !important;
+          margin-bottom: 0px !important;
+          margin-top: 0px !important;
+          text-transform: lowercase !important;
+
+          & span {
+            font-size: 125%;
+          }
+
+          &:hover {
+            color: #583e85;
+          }
+        }
+      }
+    }
+
+    & .actions {
+      & .sunburst {
+        position: relative;
+        border: unset;
+        padding: 0px;
+        width: 120px;
+        height: 60px;
+        margin-right: 10px;
+        box-shadow: unset;
+
+        & .button-bg {
+          position: absolute;
+          width: 120px;
+          height: 60px;
+          z-index: 1;
+          opacity: 1;
+          top: 0px;
+          left: 0px;
+          transition: all 0.2s ease;
+
+          & > div {
+            width: 120px;
+            height: 60px;
+          }
+        }
+
+        & .button-bg-hover {
+          position: absolute;
+          width: 120px;
+          height: 60px;
+          z-index: 1;
+          opacity: 0;
+          top: 0px;
+          left: 0px;
+          transition: all 0.2s ease;
+
+          & > div {
+            width: 120px;
+            height: 60px;
+          }
+        }
+
+        & .button-bg-text {
+          position: absolute;
+          width: 120px;
+          height: 60px;
+          top: 0px;
+          left: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 2;
+          font-family: futura-pt, sans-serif !important;
+          font-style: normal;
+          font-weight: 800 !important;
+
+          & span {
+            font-size: 115%;
+          }
+        }
+
+        &:hover {
+          & .button-bg {
+            opacity: 0px;
+          }
+
+          & .button-bg-hover {
+            opacity: 1px;
+          }
+        }
+      }
+
+      & .get-started {
+        position: relative;
+        border: unset;
+        padding: 0px;
+        width: 120px;
+        height: 60px;
+        box-shadow: unset;
+        background: #583e85;
+        border-radius: 20px;
+        transition: all 0.2s ease;
+        font-family: futura-pt, sans-serif !important;
+        font-style: normal;
+        font-weight: 800 !important;
+
+        & .centered-text {
+          position: absolute;
+          width: 120px;
+          height: 60px;
+          top: 0px;
+          left: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+
+          & span {
+            font-size: 115%;
+          }
+        }
+
+        &:hover {
+          background: #7d5eb4;
+        }
+      }
+    }
+  }
+
+  &.mobile-header {
+    padding: 0px 5%;
+    margin-bottom: 1rem;
+
+    & .bordered {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px dotted #583e85;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+
+      & .logo {
+        height: 60px;
+        width: 155px;
+
+        & > div {
+          height: 60px;
+          width: 155px;
+        }
+      }
+
+      & .actions {
+        & .menu-button {
+          position: relative;
+          border: unset;
+          padding: 0px;
+          width: 60px;
+          height: 60px;
+          box-shadow: unset;
+          background: #583e85;
+          border-radius: 20px;
+          transition: all 0.2s ease;
+          font-family: futura-pt, sans-serif !important;
+          font-style: normal;
+          font-weight: 800 !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: #7d5eb4;
+          }
+        }
+      }
+    }
+  }
+}
+
+& .mobile-menu {
+  padding: 1rem 5%;
+
+  & .mobile-menu-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    & .menu-button {
+      position: relative;
+      border: unset;
+      padding: 0px;
+      width: 60px;
+      height: 60px;
+      box-shadow: unset;
+      background: #583e85;
+      border-radius: 20px;
+      transition: all 0.2s ease;
+      font-family: futura-pt, sans-serif !important;
+      font-style: normal;
+      font-weight: 800 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: #7d5eb4;
+      }
+    }
+  }
+
+  & #nav {
+    max-width: calc(100% - 72px);
+    margin-top: -60px;
+    padding: 0px !important;
+    list-style: none;
+
+    & li {
+      & > a {
+        font-weight: 800 !important;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+
+        & span {
+          font-size: 225%;
+        }
+
+        &:hover {
+          color: #583e85;
+        }
+      }
+    }
+  }
+}

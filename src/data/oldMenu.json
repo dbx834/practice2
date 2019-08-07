@@ -1,0 +1,50 @@
+{
+  "nav": [
+    { "title": "Home", "link": "/", "mobileOnly": true },
+    {
+      "title": "Service",
+      "link": "/nimas-conversion-service",
+      "mobileOnly": false,
+      "otherProps": {
+        "title": "Coming soon",
+        "disabled": "disabled",
+        "className": "not-active"
+      }
+    },
+    {
+      "title": "Pricing",
+      "link": "/pricing",
+      "mobileOnly": false,
+      "otherProps": {
+        "title": "Coming soon",
+        "disabled": "disabled",
+        "className": "not-active"
+      }
+    },
+    {
+      "title": "Resources",
+      "link": "/resources",
+      "mobileOnly": false,
+      "otherProps": {
+        "title": "Coming soon",
+        "disabled": "disabled",
+        "className": "not-active"
+      }
+    },
+    {
+      "title": "About",
+      "link": "/about",
+      "mobileOnly": false
+    },
+    {
+      "title": "Login",
+      "link": "http://nimas.dmiepub.com/?module=signin",
+      "mobileOnly": true
+    },
+    {
+      "title": "Contact",
+      "link": "http://nimas.dmiepub.com/?module=contact",
+      "mobileOnly": true
+    }
+  ]
+}
